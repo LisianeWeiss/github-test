@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>GitHub Profile</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main class="container">
+        <section class="infos">
+            <div class="avatar">
+                <img class="avatar-user" src="./assets/image/picture.jpg" alt="Imagem de perfil">
+            </div>
+            <div>
+                <span class="title">Lisiane Weiss</span>
+            </div>
+            <div style="display: grid; padding-bottom: 16px;">
+                <span class="text">Desenvolvedora Front-End</span>
+                <span class="text">Velo Cobrança LTDA</span>
+            </div>
+        </section>
+        <section class="dropdown">
+            <span class="textBox text-two">Informações adicionais</span>
+            <img src="./assets/image/arrow-down.svg" alt="arrow dropdown" class="arrow-dropdown">
+            <div class="option" onclick="show()">
+                <div>
+                    <span class="text-two"><img src="./assets/image/job.svg" alt="imagem empresa" class="icons"><a
+                            href="" target="_blank">Velo
+                            Cobrança</a></span>
+                </div>
+                <div>
+                    <span class="text-two"><img src="./assets/image/location.svg" alt="imagem localização"
+                            class="icons"><a href="" target="_blank">Blumenau
+                            - SC</a></span>
+                </div>
+                <div>
+                    <span class="text-two"><img src="./assets/image/instagram.svg" alt="imagem instagram"
+                            class="icons"><a href="https://www.instagram.com/lisianeweiss/"
+                            target="_blank">Instagram</a></span>
+                </div>
+            </div>
+        </section>
+        <section class="data">
+            <div class="display-data" >
+                <div style="line-height: 30px;">
+                    <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 8px;">
+                    <span class="text text-data" style="color: #262626; padding-right: 8px;">Respositories</span>
+                    <span class="text text-data text-button">81</span>
+                    <hr>
+                </div>
+                
+                <div>
+                    <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 8px;">
+                    <span class="text text-data" style="padding-right: 8px;">Starred</span>
+                    <span class="text text-data text-button">12</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function () {
+            dropdown.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

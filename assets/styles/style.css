@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+htlm{
+    --grey-light: #F8F8F8;
+    --blue: #0587FF;
+    --grey: #989898;
+    --black: #262626;
+    --rose: #FD8C73;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #989898;
+    font-weight: 400;
+
+}
+
+.avatar{
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.avatar-user{
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 10px;  
+}
+
+.infos{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.title{
+    font-size: clamp(20px, 1.5rem, 2.4vw); 
+    line-height: 2rem;
+    font-weight: 700;
+    color: #262626;
+}
+
+.text{
+    font-size: clamp(14px, 1rem, 2vw);
+    color: #989898;
+}
+.text-two{
+    color: #0587FF;
+    font-size: clamp(14px, 1rem, 2vw);
+    text-align: center;
+}
+
+.text-two a{
+    text-decoration: none;
+    color: #0587FF;
+    vertical-align: middle;
+}
+
+.text-two a:hover{
+    color: #0877df;
+    cursor: pointer;
+}
+
+/* DROPDOWN INFORMAÇÕES */
+
+.dropdown{
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    cursor: pointer;  
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.dropdown .arrow-dropdown{
+    justify-self: center; 
+    padding-top: 10px;
+}
+
+.dropdown::before{
+    right: 20px;
+    top: 15px;
+}
+
+.dropdown .option{
+    top: 50px;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    line-height: 2rem;
+}
+
+.dropdown.active .option{
+    display: grid;
+}
+
+.dropdown .option div:hover{
+    color: #0877df;
+    
+}
+.icons{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.data{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.display-data{
+    display: flex;
+    justify-content: space-between;
+}
+.text-data{
+    vertical-align: super;
+}
+hr{
+    border: 2px solid #FD8C73;
+    background-color: #FD8C73;
+    padding: 0px 10px;
+    width: 90%;
+}
+
+.text-button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #989898;
+    background-color: #F8F8F8;
+}
+
