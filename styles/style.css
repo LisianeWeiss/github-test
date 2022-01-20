@@ -189,9 +189,9 @@ a {
 }
   
 .filter-buttons button {
-    background: royalblue;
+    background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
     display: flex;
-    border-radius: 20px;
+    border-radius: 42px;
     border: none;
     color: #fff;
     padding: 8px 20px
