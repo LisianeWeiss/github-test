@@ -46,27 +46,129 @@
                             - SC</a></span>
                 </div>
                 <div>
-                    <span class="text-two"><img src="./assets/image/instagram.svg" alt="imagem instagram"
-                            class="icons"><a href="https://www.instagram.com/lisianeweiss/"
-                            target="_blank">Instagram</a></span>
+                    <span class="text-two">
+                        <img src="./assets/image/instagram.svg" alt="imagem instagram" class="icons">
+                        <a href="https://www.instagram.com/lisianeweiss/" target="_blank">Lisianeweiss</a>
+                    </span>
                 </div>
             </div>
         </section>
         <section class="data">
-            <div class="display-data" >
+            <div class="display-data">
                 <div style="line-height: 30px;">
-                    <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 8px;">
-                    <span class="text text-data" style="color: #262626; padding-right: 8px;">Respositories</span>
+                    <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 4px;">
+                    <span class="text text-data" style="color: #262626; padding: 8px;">Respositories</span>
                     <span class="text text-data text-button">81</span>
                     <hr>
                 </div>
-                
+
                 <div>
-                    <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 8px;">
+                    <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 4px;">
                     <span class="text text-data" style="padding-right: 8px;">Starred</span>
                     <span class="text text-data text-button">12</span>
                 </div>
             </div>
+        </section>
+        <section>
+            <div class="filter-buttons">
+                <div class="buttons">
+                    <a href="#type">
+                        <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
+                                style="padding-right: 4px;  align-self: center;">Type</button>
+                    </a>
+                    <div id="type" class="modal">
+                        <div class="modal-content">
+                            <div style="text-align: center;">
+                                <img src="./assets/image/line.svg" alt="Linha">
+                            </div>
+                            <div class="header">
+                                <div>
+                                    <span class="title" style="font-size: 1.5rem;">Type</span>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="./assets/image/close.svg" alt="botão de fechar"></a>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <label class="types">All
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">Sources
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">Forks
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">Archived
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">Mirrors
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="#language">
+                        <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
+                                style="padding-right: 4px;  align-self: center;">Language</button>
+                    </a>
+                    <div id="language" class="modal">
+                        <div class="modal-content">
+                            <div style="text-align: center;">
+                                <img src="./assets/image/line.svg" alt="Linha">
+                            </div>
+                            <div class="header">
+                                <div>
+                                    <span class="title" style="font-size: 1.5rem;">Language</span>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="./assets/image/close.svg" alt="botão de fechar"></a>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <label class="types">All
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">Java
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">TypeScript
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">HTML
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="types">CSS
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="input buttons">
+                    <input type='text' name='pesquisa'>
+                </div>
+                <div class="buttons">
+                    <img src="./assets/image/search.svg" alt="lupa de pesquisa">
+                </div>
+            </div>
+        </section>
+        <section>
+
         </section>
     </main>
 
@@ -75,7 +177,6 @@
     </footer>
 
     <script>
-
         let dropdown = document.querySelector('.dropdown');
         dropdown.onclick = function () {
             dropdown.classList.toggle('active');
