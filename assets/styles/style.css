@@ -15,6 +15,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #989898;
     font-weight: 400;
+    font-size: 14px;
 
 }
 
@@ -24,8 +25,7 @@ a {
 }
 
 .container {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding: 5vh 5vw;
 }
 
 .avatar {
@@ -47,7 +47,6 @@ a {
 .infos {
     display: block;
     text-align: center;
-    margin-top: 40px;
 }
 
 .title {
@@ -76,6 +75,22 @@ a {
 .text-two a:hover {
     color: #0877df;
     cursor: pointer;
+}
+
+.text-tree {
+    font-size: 18px;
+    font-weight: 300;
+    color: #262626;    
+}
+
+.text-four {
+    font-size: 18px;
+    font-weight: 600; 
+    color: #0587FF;
+}
+
+.text-five {
+    font-size: 14px;
 }
 
 /* DROPDOWN INFORMAÇÕES */
@@ -137,7 +152,7 @@ a {
     vertical-align: super;
 }
 
-hr {
+.hr {
     border: 2px solid #FD8C73;
     background-color: #FD8C73;
     padding: 0px 10px;
@@ -179,7 +194,7 @@ hr {
     border-radius: 20px;
     border: none;
     color: #fff;
-    padding: 12px 15px
+    padding: 8px 20px
 }
 
 /* MODAL FILTER */
@@ -290,6 +305,39 @@ hr {
   
 .types input:checked ~ .checkmark:after {
     display: block;
+}
+
+.box {
+    padding: 30px 0px;
+}
+
+.content .content-title {
+    padding-bottom: 15px;
+}
+
+.content-description {
+    padding-bottom: 15px;
+}
+
+.data-icons {
+    display: flex;   
+}
+
+.data-icons div {
+    padding-right: 30px;
+}
+
+.data-icons img {
+    padding-right: 10px;
+}
+
+.data-icons span {
+    color: #000000;
+}
+
+.content-hr {
+    border: 1px solid #F8F8F8;
+    width: 100%;
 }
 
   
