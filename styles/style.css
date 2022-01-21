@@ -12,7 +12,9 @@ a {
     text-decoration: none;
     color: #F8F8F8;
 }
+
 /* FORMATAÇÃO DE TEXTOS */
+
 .text {
     font-size: clamp(14px, 1rem, 2vw);
     color: #989898;
@@ -23,13 +25,8 @@ a {
     text-align: center;
 }
 .text-two a {
-    text-decoration: none;
     color: #0587FF;
     vertical-align: middle;
-}
-.text-two a:hover {
-    color: #0877df;
-    cursor: pointer;
 }
 .text-tree {
     font-size: 18px;
@@ -44,6 +41,9 @@ a {
 .text-five {
     font-size: 14px;
 }
+
+/* HEADER SITE */
+
 .header-logo{
     display: none;
     background-color: #24292E;
@@ -53,6 +53,9 @@ a {
     padding: 0 2vw;
     align-self: center;
 }
+
+/* PERFIL INFORMAÇÕES */
+
 .container {
     padding: 4vh 5vw;
 }
@@ -84,7 +87,9 @@ a {
     display: grid; 
     padding-bottom: 16px;
 }
+
 /* DROPDOWN INFORMAÇÕES */
+
 .dropdown {
     margin: auto;
     margin-top: 10px;
@@ -123,7 +128,9 @@ a {
     vertical-align: middle;
     padding:0px 15px;
 }
-/* END DROPDOWN */
+
+/* DADOS REPOSITÓRIOS */
+
 .data .data-display {
     justify-content: space-between;
     display: flex;
@@ -165,7 +172,9 @@ a {
     color: #FFF;
     padding: 8px 20px
 }
+
 /* MODAL FILTER */
+
 .modal {
     position: absolute;
     visibility: hidden;
@@ -175,7 +184,7 @@ a {
     left: 0px;
     top: 0px;
 }
-.modal .header {
+.modal-header {
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -209,8 +218,10 @@ a {
     width: 100%;
     z-index: 10
 }
+
 /* CHECKBOX FILTER */
-.modal-body .filter-types {
+
+.filter-types {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -259,6 +270,9 @@ a {
 .modal-body .filter-types input:checked ~ .checkmark:after {
     display: block;
 }
+
+/* FILTRO REPOSITÓRIOS */
+
 .filter-buttons  input {
     background-color: #F8F8F8;
     padding: 15px 0px;
@@ -284,6 +298,9 @@ a {
 .hr-input {
     display: none;
 }
+
+/* CONTENT */
+
 .content {
     padding: 30px 0px;
 }
@@ -293,24 +310,26 @@ a {
 .content-description {
     padding-bottom: 15px;
 }
-.content .data-icons {
+.data-icons {
     display: flex;   
 }
-.content .data-icons div {
+.data-icons div {
     padding-right: 30px;
 }
-.content .data-icons img {
+.data-icons img {
     padding-right: 10px;
     vertical-align: text-bottom;
 }
-.content .data-icons span {
+.data-icons span {
     color: #000000;
 }
 .content-hr {
     border: 1px solid #F8F8F8;
     width: 100%;
 }
+
 /* MEDIA QUERIES PARA IPAD */
+
 @media (min-width: 768px){
     .header-logo {
         display: flex;
@@ -369,6 +388,9 @@ a {
         background-image: url(/assets/image/search-light.svg);
     }
 }
+
+/* MEDIA QUERIES PARA DESKTOP */
+
 @media (min-width: 1500px) {
     .header-logo{
         padding-left: 8vw;
