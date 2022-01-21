@@ -9,14 +9,13 @@ htlm {
     --grey: #989898;
     --black: #262626;
     --rose: #FD8C73;
-
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #989898;
     font-weight: 400;
     font-size: 14px;
-
 }
 
 a {
@@ -24,37 +23,7 @@ a {
     color: #F8F8F8;
 }
 
-.container {
-    padding: 5vh 5vw;
-}
-
-.avatar {
-    display: inline-block;
-    overflow: hidden;
-    line-height: 1;
-    vertical-align: middle;
-    border-radius: 6px;
-    flex-shrink: 0;
-}
-
-.avatar-user {
-    border-radius: 50%;
-    width: 25%;
-    height: 25%;
-    margin-bottom: 10px;  
-}
-
-.infos {
-    display: block;
-    text-align: center;
-}
-
-.title {
-    font-size: clamp(20px, 1.5rem, 2.4vw); 
-    line-height: 2rem;
-    font-weight: 700;
-    color: #262626;
-}
+/* FORMATAÇÃO DE TEXTOS */
 
 .text {
     font-size: clamp(14px, 1rem, 2vw);
@@ -91,6 +60,42 @@ a {
 
 .text-five {
     font-size: 14px;
+}
+
+.header {
+    display: none;
+}
+
+.container {
+    padding: 5vh 5vw;
+}
+
+.data-profile {
+    display: block;
+    text-align: center;
+}
+
+.data-profile .avatar {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.data-profile .avatar-user {
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 10px;  
+}
+
+.data-profile .title {
+    font-size: clamp(20px, 1.5rem, 2.4vw); 
+    line-height: 2rem;
+    font-weight: 700;
+    color: #262626;
 }
 
 /* DROPDOWN INFORMAÇÕES */
@@ -134,7 +139,8 @@ a {
     color: #0877df;
     
 }
-.icons {
+
+.dropdown .icons {
     vertical-align: middle;
     padding:0px 15px;
 }
@@ -143,23 +149,23 @@ a {
     padding-bottom: 30px;
 }
 
-.display-data {
+.data .display-data {
     justify-content: space-between;
     display: flex;
 }
 
-.text-data {
+.data .text-data {
     vertical-align: super;
 }
 
-.hr {
-    border: 2px solid #FD8C73;
+.data .hr {
+    border: 1px solid #FD8C73;
     background-color: #FD8C73;
     padding: 0px 10px;
     width: 90%;
 }
 
-.text-button {
+.data .text-button {
     background-color: #F8F8F8;
     border: 1px solid #989898;
     border-radius: 20px;
@@ -176,18 +182,11 @@ a {
     width: 96%;
 }
 
-.buttons {
+.filter-buttons .data-search{
     align-self: center;
     padding-right: 4px;
 }
 
-.input input {
-    background-color: #F8F8F8;
-    padding: 15px 0px;
-    border: none;
-    width: 60%;
-}
-  
 .filter-buttons button {
     background: linear-gradient(89.89deg, #0056A6 -30.01%, #0587FF 125.65%);
     display: flex;
@@ -196,6 +195,13 @@ a {
     color: #fff;
     padding: 8px 20px
 }
+
+.filter-buttons  input {
+    background-color: #F8F8F8;
+    padding: 15px 0px;
+    border: none;
+    width: 100%;
+}  
 
 /* MODAL FILTER */
 
@@ -230,12 +236,12 @@ a {
     height: 100vh;
 }
 
-.modal .modal-body {
+.modal-body {
     display: grid;
     margin: 50px 20px;
 }
 
-.modal .modal-body input {
+.modal-body input {
     background-color: #FFFFFF;
 }
   
@@ -252,15 +258,16 @@ a {
 
 /* CHECKBOX FILTER */
 
-.types {
+.modal-body .filter-types {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 30px;
     cursor: pointer;
+    font-size: 16px;
 }
   
-.types input {
+.modal-body .filter-types input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -268,7 +275,7 @@ a {
     width: 0;
 }
   
-.checkmark {
+.modal-body .filter-types .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -279,16 +286,16 @@ a {
     border: 1px solid #989898;
 } 
  
-.types:hover input ~ .checkmark {
+.modal-body .filter-types:hover input ~ .checkmark {
     background-color: #FFFFFF;
     
 }
   
-.types input:checked ~ .checkmark {
+.modal-body .filter-types input:checked ~ .checkmark {
     background-color: #0587FF;
 }
   
-.types .checkmark:after {
+.modal-body .filter-types .checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -303,15 +310,15 @@ a {
     transform: rotate(45deg);
 }
   
-.types input:checked ~ .checkmark:after {
+.modal-body .filter-types input:checked ~ .checkmark:after {
     display: block;
 }
 
-.box {
+.content {
     padding: 30px 0px;
 }
 
-.content .content-title {
+.content-title {
     padding-bottom: 15px;
 }
 
@@ -319,25 +326,41 @@ a {
     padding-bottom: 15px;
 }
 
-.data-icons {
+.content .data-icons {
     display: flex;   
 }
 
-.data-icons div {
+.content .data-icons div {
     padding-right: 30px;
 }
 
-.data-icons img {
+.content .data-icons img {
     padding-right: 10px;
+    vertical-align: text-bottom;
 }
 
-.data-icons span {
+.content .data-icons span {
     color: #000000;
 }
 
 .content-hr {
     border: 1px solid #F8F8F8;
     width: 100%;
+}
+
+/* MEDIA QUERIES PARA IPAD */
+
+@media screen and (min-width: 767px){
+    .header{
+        display: flex;
+    }
+
+    .data-profile .avatar, .title {
+        display: flex;
+    }
+
+    
+
 }
 
   
