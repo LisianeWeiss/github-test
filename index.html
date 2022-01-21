@@ -15,7 +15,12 @@
 <body>
 
     <header>
-
+        <div class="header-content">
+            <img src="./assets/image/github-icon.svg" alt="icone github" style="padding-right: 16px;">
+            <img src="./assets/image/github-logo.svg" alt="logo github">
+            <span style="font-size: 24px; color: #FFFFFF; padding: 0px 22px;">/</span>
+            <span style="font-size: 16px; font-weight: 300; color: #FFFFFF;">Profile</span>
+        </div>
     </header>
 
     <main class="container">
@@ -26,51 +31,48 @@
             <div>
                 <span class="title">Lisiane Weiss</span>
             </div>
-            <div style="display: grid; padding-bottom: 16px;">
+            <div class="profile-description">
                 <span class="text">Desenvolvedora Front-End</span>
                 <span class="text">Velo Cobrança LTDA</span>
             </div>
-        </section>
-        <section class="dropdown">
-            <span class="textBox text-two">Informações adicionais</span>
-            <img src="./assets/image/arrow-down.svg" alt="arrow dropdown" class="arrow-dropdown">
-            <div class="option" onclick="show()">
-                <div>
-                    <span class="text-two"><img src="./assets/image/job.svg" alt="imagem empresa" class="icons"><a
-                            href="" target="_blank">Velo
-                            Cobrança</a></span>
-                </div>
-                <div>
-                    <span class="text-two"><img src="./assets/image/location.svg" alt="imagem localização"
-                            class="icons"><a href="" target="_blank">Blumenau
-                            - SC</a></span>
-                </div>
-                <div>
-                    <span class="text-two">
-                        <img src="./assets/image/instagram.svg" alt="imagem instagram" class="icons">
-                        <a href="https://www.instagram.com/lisianeweiss/" target="_blank">Lisianeweiss</a>
-                    </span>
+            <div class="dropdown">
+                <span class="textBox text-two">Informações adicionais</span>
+                <img src="./assets/image/arrow-down.svg" alt="arrow dropdown" class="arrow-dropdown">
+                <div class="option" onclick="show()">
+                    <div>
+                        <span class="text-two"><img src="./assets/image/job.svg" alt="imagem empresa" class="icons"><a
+                                href="" target="_blank">Velo
+                                Cobrança</a></span>
+                    </div>
+                    <div>
+                        <span class="text-two"><img src="./assets/image/location.svg" alt="imagem localização"
+                                class="icons"><a href="" target="_blank">Blumenau
+                                - SC</a></span>
+                    </div>
+                    <div>
+                        <span class="text-two">
+                            <img src="./assets/image/instagram.svg" alt="imagem instagram" class="icons">
+                            <a href="https://www.instagram.com/lisianeweiss/" target="_blank">Lisianeweiss</a>
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="data">
-            <div class="display-data">
+            <section class="data-display">
                 <div style="line-height: 30px;">
                     <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 4px;">
                     <span class="text text-data" style="color: #262626; padding: 8px;">Respositories</span>
                     <span class="text text-data text-button">81</span>
                     <hr class="hr">
                 </div>
-
                 <div style="line-height: 30px;">
                     <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 4px;">
                     <span class="text text-data" style="padding-right: 8px;">Starred</span>
                     <span class="text text-data text-button">12</span>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="filter-buttons">
+            </section>
+            <section class="filter-buttons">
                 <div class="data-search">
                     <a href="#type">
                         <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
@@ -165,10 +167,8 @@
                 <div class="data-search">
                     <img src="./assets/image/search.svg" alt="lupa de pesquisa">
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="content">
+            </section>
+            <section class="content">
                 <div class="content-title">
                     <span class="text-tree">Node / <span class="text-four">Release</span></span>
                 </div>
@@ -185,10 +185,11 @@
                         <span>142</span>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <hr class="content-hr">
-            <div class="content-box">
+
+            <section class="content">
                 <div class="content-title">
                     <span class="text-tree">Cordeiro / <span class="text-four">Angular Choosen</span></span>
                 </div>
@@ -207,11 +208,11 @@
                         <span>91</span>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <hr class="content-hr">
 
-            <div class="content-box">
+            <section class="content">
                 <div class="content-title">
                     <span class="text-tree">Test / <span class="text-four">App Release 1.03</span></span>
                 </div>
@@ -232,7 +233,7 @@
                         <span>562</span>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
 
@@ -244,6 +245,7 @@
         let dropdown = document.querySelector('.dropdown');
         dropdown.onclick = function () {
             dropdown.classList.toggle('active');
+
         }
     </script>
 

@@ -62,12 +62,20 @@ a {
     font-size: 14px;
 }
 
-.header {
+header {
     display: none;
+    background-color: #24292E;
+    height: 72px;
+    display: flex;
+}
+
+.header-content{
+    padding: 0 2vw;
+    align-self: center;
 }
 
 .container {
-    padding: 5vh 5vw;
+    padding: 4vh 5vw;
 }
 
 .data-profile {
@@ -86,8 +94,8 @@ a {
 
 .data-profile .avatar-user {
     border-radius: 50%;
-    width: 25%;
-    height: 25%;
+    width: 104px;
+    height: 104px;
     margin-bottom: 10px;  
 }
 
@@ -96,6 +104,11 @@ a {
     line-height: 2rem;
     font-weight: 700;
     color: #262626;
+}
+
+.data-profile .profile-description {
+    display: grid; 
+    padding-bottom: 16px;
 }
 
 /* DROPDOWN INFORMAÇÕES */
@@ -145,13 +158,12 @@ a {
     padding:0px 15px;
 }
 
-.data {
-    padding-bottom: 30px;
-}
+/* END DROPDOWN */
 
-.data .display-data {
+.data .data-display {
     justify-content: space-between;
     display: flex;
+    padding-bottom: 20px;
 }
 
 .data .text-data {
@@ -213,6 +225,7 @@ a {
     right: 0px;
     left: 0px;
     top: 0px;
+    
 
 }
 
@@ -351,15 +364,36 @@ a {
 /* MEDIA QUERIES PARA IPAD */
 
 @media screen and (min-width: 767px){
-    .header{
+    .header {
         display: flex;
     }
 
-    .data-profile .avatar, .title {
-        display: flex;
+    .container { 
+        padding-right: 2vw;
     }
 
-    
+    .data-profile {
+        display: inline-block;
+    }
+
+    .dropdown .textBox {
+        display: none;
+    }
+
+    .dropdown .arrow-dropdown {
+        display: none;
+    }
+
+    .dropdown .option {
+        background-color: #fff;
+    }
+
+    .data {
+        width: 60vw;
+        display: inline-block;
+        vertical-align: top;  
+        padding-left: 5vh;
+    }
 
 }
 
