@@ -311,7 +311,7 @@ a {
     width: 100%;
 }
 /* MEDIA QUERIES PARA IPAD */
-@media (min-width: 767px){
+@media (min-width: 768px){
     .header-logo {
         display: flex;
     }
@@ -369,21 +369,33 @@ a {
         background-image: url(/assets/image/search-light.svg);
     }
 }
-@media (min-width: 1499px) {
+@media (min-width: 1500px) {
     .header-logo{
         padding-left: 8vw;
+        padding-right: 8vw;
     }
     .container{
         padding-left: 12vw;
         padding-right: 12vw;  
     }
+    .data-profile .avatar-user{
+        width: 150px;
+        height: 150px;
+    }
     .data .data-display{
         padding-right: 30vw;
     }
-
     .filter-buttons{
         display: flex;
         flex-direction: row-reverse;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .filter-buttons .data-search{
+        padding-right: 50px;
+    }
+    .content{
+        padding-bottom: 0px;
     }
     .content-hr{
         display: none;
@@ -391,7 +403,6 @@ a {
     .hr-input{
         width: 50%;
     }
-
 }
 
   
