@@ -14,7 +14,7 @@
 
 <body>
 
-    <header>
+    <header class="header-logo">
         <div class="header-content">
             <img src="./assets/image/github-icon.svg" alt="icone github" style="padding-right: 16px;">
             <img src="./assets/image/github-logo.svg" alt="logo github">
@@ -40,14 +40,13 @@
                 <img src="./assets/image/arrow-down.svg" alt="arrow dropdown" class="arrow-dropdown">
                 <div class="option" onclick="show()">
                     <div>
-                        <span class="text-two"><img src="./assets/image/job.svg" alt="imagem empresa" class="icons"><a
-                                href="" target="_blank">Velo
-                                Cobrança</a></span>
+                        <span class="text-two"><img src="./assets/image/job.svg" alt="imagem empresa" class="icons">Velo
+                            Cobrança</span>
                     </div>
                     <div>
                         <span class="text-two"><img src="./assets/image/location.svg" alt="imagem localização"
-                                class="icons"><a href="" target="_blank">Blumenau
-                                - SC</a></span>
+                                class="icons">Blumenau
+                            - SC</span>
                     </div>
                     <div>
                         <span class="text-two">
@@ -74,10 +73,12 @@
             </section>
             <section class="filter-buttons">
                 <div class="data-search">
-                    <a href="#type">
-                        <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
-                                style="padding-right: 4px;  align-self: center;">Type</button>
-                    </a>
+                    <div style="padding-right: 8px;">
+                        <a href="#type">
+                            <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
+                                    style="padding-right: 4px;  align-self: center;">Type</button>
+                        </a>
+                    </div>
                     <div id="type" class="modal">
                         <div class="modal-content">
                             <div style="text-align: center;">
@@ -116,12 +117,12 @@
                         </div>
                         <div class="overlay"></div>
                     </div>
-                </div>
-                <div class="data-search">
-                    <a href="#language">
-                        <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
-                                style="padding-right: 4px;  align-self: center;">Language</button>
-                    </a>
+                    <div>
+                        <a href="#language">
+                            <button type='submit'><img src="./assets/image/arrow-down-light.svg" alt="Arrow down branca"
+                                    style="padding-right: 4px;  align-self: center;">Language</button>
+                        </a>
+                    </div>
                     <div id="language" class="modal">
                         <div class="modal-content">
                             <div style="text-align: center;">
@@ -161,13 +162,17 @@
                         <div class="overlay"></div>
                     </div>
                 </div>
-                <div class="input data-search">
-                    <input type='text' name='pesquisa'>
+                <div class="input-filter">
+                    <div class="input">
+                        
+                        <input type='text' name='pesquisa' id="placeholder" placeholder="Search here">
+                    </div>
+                    <div class="input search-icon"></div>
+                    
                 </div>
-                <div class="data-search">
-                    <img src="./assets/image/search.svg" alt="lupa de pesquisa">
-                </div>
+                
             </section>
+            <hr class="hr-input"> 
             <section class="content">
                 <div class="content-title">
                     <span class="text-tree">Node / <span class="text-four">Release</span></span>
