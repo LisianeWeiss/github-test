@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>GitHub Profile</title>
 </head>
 
@@ -25,33 +25,34 @@
 
     <main class="container">
         <section class="data-profile">
-            <div class="avatar">
-                <img class="avatar-user" src="./assets/image/picture.jpg" alt="Imagem de perfil">
+            <div class="avatar" >
+                <img class="avatar-user" src="" alt="Imagem de perfil"id="image" >
             </div>
             <div>
-                <span class="title">Lisiane Weiss</span>
+                <span class="title" id="name"></span>
             </div>
             <div class="profile-description">
-                <span class="text">Desenvolvedora Front-End</span>
-                <span class="text">Velo Cobrança LTDA</span>
+                <span class="text" id="description"></span>
+                <span class="text company"></span>
             </div>
             <div class="dropdown">
                 <span class="textBox text-two">Informações adicionais</span>
                 <img src="./assets/image/arrow-down.svg" alt="arrow dropdown" class="arrow-dropdown">
-                <div class="option" onclick="show()">
+                <div class="option" onclick="">
                     <div>
-                        <span class="text-two"><img src="./assets/image/job.svg" alt="imagem empresa" class="icons">Velo
-                            Cobrança</span>
+                        <img src="./assets/image/job.svg" alt="imagem empresa" class="icons ">
+                        <span class="text-two company">
+                        </span>
                     </div>
                     <div>
-                        <span class="text-two"><img src="./assets/image/location.svg" alt="imagem localização"
-                                class="icons">Blumenau
-                            - SC</span>
+                        <img src="./assets/image/location.svg" alt="imagem localização" class="icons">
+                        <span class="text-two" id="location">
+                        </span>
                     </div>
                     <div>
+                        <img src="./assets/image/instagram.svg" alt="imagem instagram" class="icons">
                         <span class="text-two">
-                            <img src="./assets/image/instagram.svg" alt="imagem instagram" class="icons">
-                            <a href="https://www.instagram.com/lisianeweiss/" target="_blank">Lisianeweiss</a>
+                            <a href="https://www.instagram.com/lisianeweiss/" target="_blank" id="socialMedia"></a>
                         </span>
                     </div>
                 </div>
@@ -62,13 +63,13 @@
                 <div style="line-height: 30px;">
                     <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 4px;">
                     <span class="text text-data" style="color: #262626; padding: 8px;">Respositories</span>
-                    <span class="text text-data text-button">81</span>
+                    <span class="text text-data text-button" id="repos">81</span>
                     <hr class="hr">
                 </div>
                 <div style="line-height: 30px;">
                     <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 4px;">
                     <span class="text text-data" style="padding-right: 8px;">Starred</span>
-                    <span class="text text-data text-button">12</span>
+                    <span class="text text-data text-button" id="starred">12</span>
                 </div>
             </section>
             <section class="filter-buttons">
@@ -164,15 +165,15 @@
                 </div>
                 <div class="input-filter">
                     <div class="input">
-                        
+
                         <input type='text' name='pesquisa' id="placeholder" placeholder="Search here">
                     </div>
                     <div class="input search-icon"></div>
-                    
+
                 </div>
-                
+
             </section>
-            <hr class="hr-input"> 
+            <hr class="hr-input">
             <section class="content">
                 <div class="content-title">
                     <span class="text-tree">Node / <span class="text-four">Release</span></span>
@@ -241,19 +242,7 @@
             </section>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
-
-    <script>
-        let dropdown = document.querySelector('.dropdown');
-        dropdown.onclick = function () {
-            dropdown.classList.toggle('active');
-
-        }
-    </script>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

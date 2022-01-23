@@ -63,7 +63,7 @@ a {
     display: block;
     text-align: center;
 }
-.data-profile .avatar {
+ .avatar {
     display: inline-block;
     overflow: hidden;
     line-height: 1;
@@ -71,19 +71,19 @@ a {
     border-radius: 6px;
     flex-shrink: 0;
 }
-.data-profile .avatar-user {
+.avatar-user {
     border-radius: 50%;
     width: 104px;
     height: 104px;
     margin-bottom: 10px;  
 }
-.data-profile .title {
+.title {
     font-size: clamp(20px, 1.5rem, 2.4vw); 
     line-height: 2rem;
     font-weight: 700;
     color: #262626;
 }
-.data-profile .profile-description {
+.profile-description {
     display: grid; 
     padding-bottom: 16px;
 }
@@ -98,7 +98,7 @@ a {
     text-align: center;
     padding-bottom: 40px;
 }
-.dropdown .arrow-dropdown { 
+.arrow-dropdown { 
     justify-self: center; 
     padding: 10px 0px;
 }
