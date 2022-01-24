@@ -365,7 +365,7 @@ a {
         background-color: transparent;
         padding-bottom: 4px;
     } 
-    .data .data-display{
+    .data-display{
         padding-right: 8vw;
     }
     .input-filter {
@@ -400,11 +400,11 @@ a {
         padding-left: 12vw;
         padding-right: 12vw;  
     }
-    .data-profile .avatar-user{
+    .avatar-user{
         width: 150px;
         height: 150px;
     }
-    .data .data-display{
+    .data-display{
         padding-right: 30vw;
     }
     .filter-buttons{
@@ -413,7 +413,7 @@ a {
         padding-top: 0px;
         width: 100%;
     }
-    .filter-buttons .data-search{
+     .data-search{
         padding-right: 50px;
     }
     .content{
