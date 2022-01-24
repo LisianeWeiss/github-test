@@ -60,16 +60,20 @@
         </section>
         <section class="data">
             <section class="data-display">
-                <div style="line-height: 30px;">
-                    <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 4px;">
-                    <span class="text text-data" style="color: #262626; padding: 8px;">Respositories</span>
-                    <span class="text text-data text-button">81</span>
-                    <hr class="hr">
+                <div>
+                    <a href="#" onclick="showContent(this)" id="showRepos">
+                        <img src="./assets/image/repositories.svg" alt="livro respositorios" style="padding: 0px 4px;">
+                        <span class="text text-data" for="cbToggleVisibility"
+                            >Respositories</span>
+                        <span class="text text-button" id="repos"></span>
+                    </a>
                 </div>
-                <div style="line-height: 30px;">
-                    <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 4px;">
-                    <span class="text text-data" style="padding-right: 8px;">Starred</span>
-                    <span class="text text-data text-button">12</span>
+                <div>
+                    <a href="#" onclick="showContent(this)" id="showStarred">
+                        <img src="./assets/image/star.svg" alt="estrela favoritos" style="padding: 0px 4px;">
+                        <span class="text text-data" >Starred</span>
+                        <span class="text text-button" id="starred"></span>
+                    </a>
                 </div>
             </section>
             <section class="filter-buttons">
@@ -165,84 +169,134 @@
                 </div>
                 <div class="input-filter">
                     <div class="input">
-
                         <input type='text' name='pesquisa' id="placeholder" placeholder="Search here">
                     </div>
                     <div class="input search-icon"></div>
-
                 </div>
-
             </section>
             <hr class="hr-input">
-            <section class="content">
-                <div class="content-title">
-                    <span class="text-tree" id="language-title">Node / <span class="text-four">Release</span></span>
-                </div>
-                <div class="content-description">
-                    <span id="repos-description">Node.js Foundation Release Working Group.</span>
-                </div>
-                <div class="data-icons">
-                    <div>
-                        <img src="./assets/image/star-black.svg" alt="estrela favoritos">
-                        <span>1.569</span>
+            <section id="repositories">
+                <section class="content">
+                    <div class="content-title">
+                        <span class="text-tree" id="projectName">Node / <span class="text-four">Release</span></span>
                     </div>
-                    <div>
-                        <img src="./assets/image/branch.svg" alt="git branch">
-                        <span>142</span>
+                    <div class="content-description">
+                        <span id="repos-description">Node.js Foundation Release Working Group.</span>
                     </div>
-                </div>
+                    <div class="data-icons">
+                        <div>
+                            <img src="./assets/image/star-black.svg" alt="estrela favoritos">
+                            <span>1.569</span>
+                        </div>
+                        <div>
+                            <img src="./assets/image/branch.svg" alt="git branch">
+                            <span>142</span>
+                        </div>
+                    </div>
+                </section>
+                <hr class="content-hr">
+                <section class="content">
+                    <div class="content-title">
+                        <span class="text-tree" id="projectName">Node / <span class="text-four">Release</span></span>
+                    </div>
+                    <div class="content-description">
+                        <span id="repos-description">Node.js Foundation Release Working Group.</span>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <img src="./assets/image/star-black.svg" alt="estrela favoritos">
+                            <span>1.569</span>
+                        </div>
+                        <div>
+                            <img src="./assets/image/branch.svg" alt="git branch">
+                            <span>142</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content-title">
+                        <span class="text-tree" id="projectName">Node / <span class="text-four">Release</span></span>
+                    </div>
+                    <div class="content-description">
+                        <span id="repos-description">Node.js Foundation Release Working Group.</span>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <img src="./assets/image/star-black.svg" alt="estrela favoritos">
+                            <span>1.569</span>
+                        </div>
+                        <div>
+                            <img src="./assets/image/branch.svg" alt="git branch">
+                            <span>142</span>
+                        </div>
+                    </div>
+                </section>
             </section>
-
-            <hr class="content-hr">
-
-            <section class="content">
-                <div class="content-title">
-                    <span class="text-tree">Cordeiro / <span class="text-four">Angular Choosen</span></span>
-                </div>
-                <div class="content-description">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nesciunt non voluptatum,
-                        deleniti itaque fugiat? Culpa at illo asperiores ullam, expedita iusto repudiandae similique
-                        ducimus praesentium odio tempore! Veritatis, eius.</span>
-                </div>
-                <div class="data-icons">
-                    <div>
-                        <img src="./assets/image/star-black.svg" alt="estrela favoritos">
-                        <span>726</span>
+            
+            <section id="star" style="display: none;">
+                <section class="content">
+                    <div class="content-title">
+                        <span class="text-tree" id="language-title">Node / <span class="text-four">teste</span></span>
                     </div>
-                    <div>
-                        <img src="./assets/image/branch.svg" alt="git branch">
-                        <span>91</span>
+                    <div class="content-description">
+                        <span id="repos-description">teste</span>
                     </div>
-                </div>
-            </section>
-
-            <hr class="content-hr">
-
-            <section class="content">
-                <div class="content-title">
-                    <span class="text-tree">Test / <span class="text-four">App Release 1.03</span></span>
-                </div>
-                <div class="content-description">
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorem consectetur aliquid
-                        obcaecati placeat itaque quia unde illo quibusdam ex similique tempore sunt totam dolore
-                        aspernatur, rerum amet doloribus veritatis sapiente officia quod eius, voluptatum ad quo? Eaque,
-                        nulla quos.
-                    </span>
-                </div>
-                <div class="data-icons">
-                    <div>
-                        <img src="./assets/image/star-black.svg" alt="estrela favoritos">
-                        <span>9.327</span>
+                    <div class="data-icons">
+                        <div>
+                            <img src="./assets/image/star-black.svg" alt="estrela favoritos">
+                            <span>1.569</span>
+                        </div>
+                        <div>
+                            <img src="./assets/image/branch.svg" alt="git branch">
+                            <span>142</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./assets/image/branch.svg" alt="git branch">
-                        <span>562</span>
+                </section>
+                <hr class="content-hr">
+                <section class="content">
+                    <div class="content-title">
+                        <span class="text-tree" id="language-title">Node / <span class="text-four">teste</span></span>
                     </div>
-                </div>
+                    <div class="content-description">
+                        <span id="repos-description">teste</span>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <img src="./assets/image/star-black.svg" alt="estrela favoritos">
+                            <span>1.569</span>
+                        </div>
+                        <div>
+                            <img src="./assets/image/branch.svg" alt="git branch">
+                            <span>142</span>
+                        </div>
+                    </div>
+                </section>
+                <hr class="content-hr">
+                <section class="content">
+                    <div class="content-title">
+                        <span class="text-tree" id="language-title">Node / <span class="text-four">teste</span></span>
+                    </div>
+                    <div class="content-description">
+                        <span id="repos-description">teste</span>
+                    </div>
+                    <div class="data-icons">
+                        <div>
+                            <img src="./assets/image/star-black.svg" alt="estrela favoritos">
+                            <span>1.569</span>
+                        </div>
+                        <div>
+                            <img src="./assets/image/branch.svg" alt="git branch">
+                            <span>142</span>
+                        </div>
+                    </div>
+                </section>
+                <hr class="content-hr">
             </section>
         </section>
     </main>
+    <script src="./js/utils.js"></script>
     <script src="./js/main.js"></script>
+    
 </body>
 
 </html>
