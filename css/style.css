@@ -57,7 +57,7 @@ a {
 /* PERFIL INFORMAÇÕES */
 
 .container {
-    padding: 4vh 5vw;
+    padding: 0 5vw;
 }
 .data-profile {
     display: block;
@@ -336,6 +336,7 @@ a {
     }
     .container { 
         padding-right: 2vw;
+        padding-top: 40px;
     }
     .data-profile {
         display: inline-block;
@@ -398,7 +399,8 @@ a {
     }
     .container{
         padding-left: 12vw;
-        padding-right: 12vw;  
+        padding-right: 12vw;
+        padding-top: 33px;  
     }
     .avatar-user{
         width: 150px;
@@ -417,7 +419,7 @@ a {
         padding-right: 50px;
     }
     .content{
-        padding-bottom: 0px;
+        padding: 40px 0px 8px 0px;
     }
     .content-hr{
         display: none;
