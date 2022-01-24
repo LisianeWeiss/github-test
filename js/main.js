@@ -28,19 +28,6 @@ async function getProfileData() {
         socialMedia.innerText = `${userProfile.twitter_username}`;
         repositories.innerText = `${userProfile.public_repos}`
     }
-    // URL REPOSITÓRIOS
-    const repos = await fetch(`${baseURL}users/LisianeWeiss/repos`)
-        .then(response => {
-            return response.json()
-        })
-
-    const dataRepos = repos.map((data) => {
-       return data
-    })
-  
-    const starredData = Object.keys(dataRepos).length
-       const starred = document.getElementById('starred');
-       starred.innerText = `${starredData}`;
 }
 getProfileData();
 
