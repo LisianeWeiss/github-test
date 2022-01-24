@@ -1,8 +1,6 @@
 async function getProfileData() {
-
     // URL BASE
     const baseURL = 'https://api.github.com/';
-
     // URL PERFIL DO USUÁRIO
     const profile = await fetch(`${baseURL}users/LisianeWeiss`);
 
@@ -20,7 +18,6 @@ async function getProfileData() {
         const socialMedia = document.getElementById('socialMedia');
         const repositories = document.getElementById('repos');
 
-
         image.setAttribute('src', `${userProfile.avatar_url}`);
         name.innerText = `${userProfile.name}`;
         description.innerText = `${userProfile.bio}`;
@@ -30,9 +27,7 @@ async function getProfileData() {
         location.innerText = `${userProfile.location}`;
         socialMedia.innerText = `${userProfile.twitter_username}`;
         repositories.innerText = `${userProfile.public_repos}`
-
     }
-
     // URL REPOSITÓRIOS
     const repos = await fetch(`${baseURL}users/LisianeWeiss/repos`)
         .then(response => {
@@ -41,17 +36,12 @@ async function getProfileData() {
 
     const dataRepos = repos.map((data) => {
        return data
-       
     })
   
     const starredData = Object.keys(dataRepos).length
-    
        const starred = document.getElementById('starred');
        starred.innerText = `${starredData}`;
-
-
 }
-
 getProfileData();
 
 // DROPDOWN
@@ -59,7 +49,6 @@ let dropdown = document.querySelector('.dropdown');
 dropdown.onclick = function () {
     dropdown.classList.toggle('active');
 }
-
 // TROCA DE CONTEUDO ENTRE REPOSITORIOS E STARRED
 function showContent(obj) {
 
