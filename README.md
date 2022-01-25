@@ -12,7 +12,6 @@ adicionei ela diretamente no arquivo css. Acredito que a configuração do pages
 # Observações
 Não conclui todos os requisitos, foquei em desenvolver o layout.
 não usei o Sass porque nunca usei antes, então preferi usar o CSS 
-puro para conseguir entregar algo
-o javascript também, optei por não utilizar Jquery.
+puro para conseguir entregar.
 
 
